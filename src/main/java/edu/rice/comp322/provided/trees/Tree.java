@@ -16,6 +16,7 @@ public interface Tree<T> {
      */
     @SuppressWarnings("unchecked")
     static <T> Tree<T> empty() {
+
         return (Tree<T>) Tree.Empty.SINGLETON;
     }
 
@@ -91,7 +92,9 @@ public interface Tree<T> {
             // Here, we are returning a simple empty tree to make the compiler happy. Your implementation should
             // return a tree with the same structure as the original one, with all the values mapped
             // using the function f
-            return empty();
+            R new_value = f.apply(this.value);
+            GList<Tree<R>> newChildren = this.children.map(x -> x.map(f));
+            return Tree.makeNode(new_value, newChildren);
         }
 
         /**
@@ -109,7 +112,10 @@ public interface Tree<T> {
             // satisfy the predicate (recursively) should take its place. If the node nor any of its descendents
             // satisfy the predicate, then the whole subtree should be eliminated from the result.
             // Take a look at the makeTreeHelper function below, it will be useful here.
+
+
             var newChildren = children();
+            newChildren = newChildren.map(e -> e.filter(p)).filter(e -> !e.isEmpty());
             if (p.test(value())) {
                 return makeNode(value(), newChildren);
             } else if (newChildren.isEmpty()) {

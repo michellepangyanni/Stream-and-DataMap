@@ -6,13 +6,35 @@ import edu.rice.comp322.provided.trees.Tree;
 public class TreeSolutions {
 
     // @TODO Implement tree sum
+
+    /**
+     * Recursively sum all the values of all the nodes in a Tree<Integer> without using
+     * any higher order functions, mutaton or loops.
+     * @param tree, the tree to sum
+     * @return sum of all the values of all the nodes in the given tree
+     */
     public static Integer problemOne(Tree<Integer> tree) {
-        return null;
+        if (tree.children().isEmpty()) {
+            return tree.value();
+        } else {
+            return tree.value() + problemOne(tree.children().head()) + problemOne(Tree.makeNode(0, tree.children().tail()));
+        }
     }
 
+
     // @TODO Implement tree sum using higher order list functions
+
+    /**
+     * Calculate the sum all the values of all the nodes in a Tree<Integer>
+     * using the higher order GList functions map, fold, and Filter.
+     * @param tree, the tree to sum
+     * @return sum of all the values of all the nodes in the given tree
+     */
     public static Integer problemTwo(Tree<Integer> tree) {
-        return null;
+//        int val = tree.value();
+//        return val + tree.children().fold(0, (x, childValue) -> x + problemTwo(childValue));
+        return tree.value() + tree.children().fold(0, (x, childValue) -> x + problemTwo(childValue));
+
     }
 
     /*
@@ -20,8 +42,14 @@ public class TreeSolutions {
      */
 
     // @TODO Calculate the sum of the elements of the tree using tree fold
+
+    /**
+     * Calculate the sum of the elements of the tree using tree fold
+     *@param tree, the tree to sum
+     * @return sum of all the values of all the nodes in the given tree
+     */
     public static Integer problemFour(Tree<Integer> tree) {
-        return null;
+        return tree.value() + tree.children().fold(0, (x, childValue) -> x + problemTwo(childValue));
     }
 
 }

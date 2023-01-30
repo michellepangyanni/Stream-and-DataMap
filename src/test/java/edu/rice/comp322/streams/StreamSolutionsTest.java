@@ -68,7 +68,6 @@ public class StreamSolutionsTest {
     @Transactional
     @Test
     public void problem1() {
-
         /*
          * Sequential
          */
