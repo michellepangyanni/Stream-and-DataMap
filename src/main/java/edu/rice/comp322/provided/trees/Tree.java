@@ -92,9 +92,9 @@ public interface Tree<T> {
             // Here, we are returning a simple empty tree to make the compiler happy. Your implementation should
             // return a tree with the same structure as the original one, with all the values mapped
             // using the function f
-            R new_value = f.apply(this.value);
+            R newValue = f.apply(this.value);
             GList<Tree<R>> newChildren = this.children.map(x -> x.map(f));
-            return Tree.makeNode(new_value, newChildren);
+            return Tree.makeNode(newValue, newChildren);
         }
 
         /**

@@ -8,9 +8,9 @@ public class TreeSolutions {
     // @TODO Implement tree sum
 
     /**
-     * Recursively sum all the values of all the nodes in a Tree<Integer> without using
-     * any higher order functions, mutaton or loops.
-     * @param tree, the tree to sum
+     * Recursively sum all the values of all the nodes in a Tree without using
+     * any higher order functions, mutation or loops.
+     * @param tree the tree to sum
      * @return sum of all the values of all the nodes in the given tree
      */
     public static Integer problemOne(Tree<Integer> tree) {
@@ -25,14 +25,12 @@ public class TreeSolutions {
     // @TODO Implement tree sum using higher order list functions
 
     /**
-     * Calculate the sum all the values of all the nodes in a Tree<Integer>
+     * Calculate the sum all the values of all the nodes in a Tree
      * using the higher order GList functions map, fold, and Filter.
      * @param tree, the tree to sum
      * @return sum of all the values of all the nodes in the given tree
      */
     public static Integer problemTwo(Tree<Integer> tree) {
-//        int val = tree.value();
-//        return val + tree.children().fold(0, (x, childValue) -> x + problemTwo(childValue));
         return tree.value() + tree.children().fold(0, (x, childValue) -> x + problemTwo(childValue));
 
     }
@@ -44,8 +42,8 @@ public class TreeSolutions {
     // @TODO Calculate the sum of the elements of the tree using tree fold
 
     /**
-     * Calculate the sum of the elements of the tree using tree fold
-     *@param tree, the tree to sum
+     * Calculate the sum of the elements of the tree using tree fold.
+     * @param tree, the tree to sum
      * @return sum of all the values of all the nodes in the given tree
      */
     public static Integer problemFour(Tree<Integer> tree) {

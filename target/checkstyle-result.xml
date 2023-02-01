@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="6.11.2">
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/solutions/TreeSolutions.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/solutions/StreamSolutions.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/trees/Tree.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/trees/generatetree/TreeGenerator.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/trees/GList.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/repos/ProductRepo.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/repos/OrderRepo.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/repos/CustomerRepo.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/models/Order.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/models/Product.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/models/Customer.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/AppCommandRunner.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/provided/DiscountObject.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/java/edu/rice/comp322/provided/streams/DemoApplication.java">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/main/resources/application.properties">
+</file>
+<file name="/Users/apple/COMP322/Hw/hw1-michellepangyanni/src/test/resources/application.properties">
+</file>
+</checkstyle>
